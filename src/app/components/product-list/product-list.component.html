@@ -1,0 +1,20 @@
+<div fxLayout="column">
+    <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center"  *ngIf="(products$| async) as p">
+        <div>
+            Name:
+        </div>
+        <div>
+            {{p.name}}
+        </div>
+        <div>
+            Price:
+        </div>   
+        <div>
+            {{p.price}}
+        </div> 
+        <div>
+            <button mat-button color="primary">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
